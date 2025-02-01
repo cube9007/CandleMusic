@@ -1,0 +1,16 @@
+$iconsList: 
+  'youtube';
+;
+.i {
+  @each $item in $iconsList {
+    &-#{$item} {
+      @include mask('icons/#{$item}.svg');
+      width: 20rem;
+      height: 20rem;
+
+      // &:not([class*="bgc-"]) {
+      //   background-color: var(--gray7);
+      // }
+    }
+  }
+}

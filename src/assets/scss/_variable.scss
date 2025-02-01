@@ -1,0 +1,247 @@
+
+:root {
+  // color
+  --set-black: 0, 0, 0;
+  --set-white: 255, 255, 255;
+  --set-primary: 1, 160, 94;
+
+  --black: rgb(var(--set-black));
+  --white: rgb(var(--set-white));
+  --primary: rgb(var(--set-primary));
+  --secondary: rgb(var(--set-secondary));
+  --tertiary: rgb(var(--set-tertiary));
+
+  --notification: rgb(237, 46, 46);
+  --success: rgb(14, 218, 108);
+  --warning: rgb(252, 166, 0);
+
+  --disabled: var(--grayc);
+  --disabled_deep: var(--graya);
+
+  --gray1: rgb(var(--set-black), 0.933);
+  --gray2: rgb(var(--set-black), 0.866);
+  --gray3: rgb(var(--set-black), 0.8);
+  --gray4: rgb(var(--set-black), 0.733);
+  --gray5: rgb(var(--set-black), 0.666);
+  --gray6: rgb(var(--set-black), 0.6);
+  --gray7: rgb(var(--set-black), 0.533);
+  --gray8: rgb(var(--set-black), 0.466);
+  --gray9: rgb(var(--set-black), 0.4);
+  --graya: rgb(var(--set-black), 0.333);
+  --grayb: rgb(var(--set-black), 0.266);
+  --grayc: rgb(var(--set-black), 0.2);
+  --grayd: rgb(var(--set-black), 0.133);
+  --graye: rgb(var(--set-black), 0.066);
+  --grayf5: rgb(var(--set-black), 0.04);
+  --grayf8: rgb(var(--set-black), 0.027);
+
+  --transparent: rgb(var(--set-black), 0);
+  --white3: rgb(var(--set-white), 0.8);
+  --white6: rgb(var(--set-white), 0.6);
+  --white9: rgb(var(--set-white), 0.4);
+  --whitec: rgb(var(--set-white), 0.2);
+
+  --gray1-100: #111;
+  --gray2-100: #222;
+  --gray3-100: #333;
+  --gray4-100: #444;
+  --gray5-100: #555;
+  --gray6-100: #666;
+  --gray7-100: #777;
+  --gray8-100: #888;
+  --gray9-100: #999;
+  --graya-100: #aaa;
+  --grayb-100: #bbb;
+  --grayc-100: #ccc;
+  --grayd-100: #ddd;
+  --graye-100: #eee;
+  --grayf5-100: #f5f5f5;
+  --grayf8-100: #f8f8f8;
+
+  --shadow: 0 0 8px 0 var(--grayc);
+
+  --backdrop: var(--gray9);
+
+  // radius
+  --radius: 5px;
+}
+
+$colors: (
+  "primary" : var(--primary),
+  "notification": var(--notification),
+  "success": var(--success),
+  "warning": var(--warning),
+  "black" : var(--black),
+  "black-always" : black,
+  "gray1"  : var(--gray1) ,
+  "gray2"  : var(--gray2) ,
+  "gray3"  : var(--gray3) ,
+  "gray4"  : var(--gray4) ,
+  "gray5"  : var(--gray5) ,
+  "gray6"  : var(--gray6) ,
+  "gray7"  : var(--gray7) ,
+  "gray8"  : var(--gray8) ,
+  "gray9"  : var(--gray9) ,
+  "graya"  : var(--graya) ,
+  "grayb"  : var(--grayb) ,
+  "grayc"  : var(--grayc) ,
+  "grayd"  : var(--grayd) ,
+  "graye"  : var(--graye) ,
+  "grayf5" : var(--grayf5),
+  "grayf8" : var(--grayf8),
+  "gray1-100"  : var(--gray1-100) ,
+  "gray2-100"  : var(--gray2-100) ,
+  "gray3-100"  : var(--gray3-100) ,
+  "gray4-100"  : var(--gray4-100) ,
+  "gray5-100"  : var(--gray5-100) ,
+  "gray6-100"  : var(--gray6-100) ,
+  "gray7-100"  : var(--gray7-100) ,
+  "gray8-100"  : var(--gray8-100) ,
+  "gray9-100"  : var(--gray9-100) ,
+  "graya-100"  : var(--graya-100) ,
+  "grayb-100"  : var(--grayb-100) ,
+  "grayc-100"  : var(--grayc-100) ,
+  "grayd-100"  : var(--grayd-100) ,
+  "graye-100"  : var(--graye-100) ,
+  "grayf5-100" : var(--grayf5-100),
+  "grayf8-100" : var(--grayf8-100),
+  "white"  : var(--white) ,
+  "white-always"  : white ,
+  "white3" : var(--white3),
+  "white6" : var(--white6),
+  "white9" : var(--white9),
+  "whitec" : var(--whitec),
+  "transparent" : var(--transparent),
+  "disabled" : var(--disabled),
+  "disabled_deep" : var(--disabled_deep),
+);
+
+$grays: (
+  "black"  : var(--black)     ,
+  "black-always" :black     ,
+  "white"  : var(--white)     ,
+  "white-always" :white     ,
+  "gray1"  : var(--gray1-100) ,
+  "gray2"  : var(--gray2-100) ,
+  "gray3"  : var(--gray3-100) ,
+  "gray4"  : var(--gray4-100) ,
+  "gray5"  : var(--gray5-100) ,
+  "gray6"  : var(--gray6-100) ,
+  "gray7"  : var(--gray7-100) ,
+  "gray8"  : var(--gray8-100) ,
+  "gray9"  : var(--gray9-100) ,
+  "graya"  : var(--graya-100) ,
+  "grayb"  : var(--grayb-100) ,
+  "grayc"  : var(--grayc-100) ,
+  "grayd"  : var(--grayd-100) ,
+  "graye"  : var(--graye-100) ,
+  "grayf5" : var(--grayf5-100),
+  "grayf8" : var(--grayf8-100),
+);
+
+
+$main : (
+    "primary" : var(--set-primary),
+    "black" : var(--set-black),
+    "black-always" : var(--set-black-always),
+    "white" : var(--set-white),
+    "white-always" : var(--set-white-always),
+);
+
+@each $semantic, $color in $colors {
+  .bgc-#{$semantic} {
+    background-color: $color !important;
+  }
+  .txt-#{$semantic} {
+    color: $color !important;
+  }
+  .otl-#{$semantic} {
+    border: 1px solid $color !important;
+  }
+  .otlt-#{$semantic} {
+    border-top: 1px solid $color !important;
+  }
+  .otlb-#{$semantic} {
+    border-bottom: 1px solid $color !important;
+  }
+  @for $i from 1 to 11 {
+    .otlb#{$i}-#{$semantic} {
+      border-bottom: #{$i}px solid $color !important;
+    }
+  }
+  .otll-#{$semantic} {
+    border-left: 1px solid $color !important;
+  }
+  .otlr-#{$semantic} {
+    border-right: 1px solid $color !important;
+  }
+  .otlt-#{$semantic}-dashed {
+    border-top: 1px dashed $color !important;
+  }
+  .otlb-#{$semantic}-dashed {
+    border-bottom: 1px dashed $color !important;
+  }
+  .otll-#{$semantic}-dashed {
+    border-left: 1px dashed $color !important;
+  }
+  .otlr-#{$semantic}-dashed {
+    border-right: 1px dashed $color !important;
+  }
+}
+
+@for $i from 1 to 101 {
+  @each $semantic, $color in $main {
+    .bgc-#{$semantic}_#{$i}p {
+        background-color: rgb($color, calc(#{$i} * 0.01)) !important;
+    }
+    .txt-#{$semantic}_#{$i}p {
+        color: rgb($color, calc(#{$i} * 0.01)) !important;
+    }
+    .otl-#{$semantic}_#{$i}p {
+        border: 1px solid rgb($color, calc(#{$i} * 0.01)) !important;
+    }
+    .otlb-#{$semantic}_#{$i}p {
+        border-bottom: 1px solid rgb($color, calc(#{$i} * 0.01)) !important;
+    }
+    .otlb-#{$semantic}_#{$i}p-dashed {
+        border-bottom: 1px dashed rgb($color, calc(#{$i} * 0.01)) !important;
+    }
+    .hover {
+      &-bgc-#{$semantic}_#{$i}p {
+        &:hover {
+          background-color: rgb($color, calc(#{$i} * 0.01)) !important;
+        }
+      }
+      &-txt-#{$semantic}_#{$i}p {
+        &:hover {
+          color: rgb($color, calc(#{$i} * 0.01)) !important;
+        }
+      }
+      &-otl-#{$semantic}_#{$i}p {
+        &:hover {
+          border: 1px solid rgb($color, calc(#{$i} * 0.01)) !important;
+        }
+      }
+    }
+  }
+}
+
+@each $semantic, $color in $colors {
+  .hover {
+    &-bgc-#{$semantic} {
+      &:hover {
+        background-color: $color !important;
+      }
+    }
+    &-txt-#{$semantic} {
+      &:hover {
+        color: $color !important;
+      }
+    }
+    &-otl-#{$semantic} {
+      &:hover {
+        border: 1px solid $color !important;
+      }
+    }
+  }
+}

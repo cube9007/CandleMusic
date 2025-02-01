@@ -1,0 +1,395 @@
+// font
+@for $i from 1 to 101 {
+  .size#{$i} {
+    font-size: #{$i}px !important;
+  }
+}
+.t {
+  font-weight: 300;
+}
+.m {
+  font-weight: 500;
+}
+.b {
+  font-weight: 700;
+}
+.bb {
+  font-weight: 900;
+}
+.underline {
+  text-decoration: underline;
+}
+
+// width height
+.minvh100 {
+  min-height: 100vh;
+}
+.minvw100 {
+  min-width: 100vw;
+}
+@for $i from 1 to 101 {
+  .vw100-#{$i} {
+    width: calc(100vw - #{$i}px);
+  }
+  .vh100-#{$i} {
+    height: calc(100vh - #{$i}px);
+  }
+  .width16-#{$i} {
+    width: calc(16.66% - #{$i}px);
+  }
+  .width25-#{$i} {
+    width: calc(25% - #{$i}px);
+  }
+  .width33-#{$i} {
+    width: calc(33.33% - #{$i}px);
+  }
+  .width50-#{$i} {
+    width: calc(50% - #{$i}px);
+  }
+}
+@for $i from 1 to 501 {
+  .width#{$i} {
+      width: calc(#{$i} * 1%) !important;
+  }
+  .height#{$i} {
+      height: calc(#{$i} * 1%) !important;
+  }
+  .vh#{$i} {
+      height: #{$i}vh !important;
+  }
+  .vw#{$i} {
+      width: #{$i}vw !important;
+  }
+}
+@for $i from 0 to 501 {
+  .w#{$i} {
+    width: #{$i}px !important;
+  }
+  .h#{$i} {
+    height: #{$i}px !important;
+  }
+  .minw#{$i} {
+    min-width: #{$i}px !important;
+  }
+  .minh#{$i} {
+    min-height: #{$i}px !important;
+  }
+  .maxw#{$i} {
+    max-width: #{$i}px !important;
+  }
+  .maxh#{$i} {
+    max-height: #{$i}px !important;
+  }
+}
+
+.fitContent {
+  width: fit-content;
+  height: fit-content;
+}
+
+// lineHeight
+@for $i from 60 to 201 {
+  .lh#{$i} {line-height: calc(#{$i} * 1%);}
+}
+// letterSpacing
+@for $i from 1 to 101 {
+  .ls#{$i} {letter-spacing: #{$i}px;}
+}
+
+// margin/padding
+@for $i from 0 to 301 {
+  .m#{$i} {
+    margin: #{$i}px !important;
+  }
+  .mx#{$i} {
+    margin-right: #{$i}px !important;
+    margin-left: #{$i}px !important;
+  }
+  .my#{$i} {
+    margin-top: #{$i}px !important;
+    margin-bottom: #{$i}px !important;
+      
+  }
+  .mt#{$i} {
+    margin-top: #{$i}px !important;
+  }
+  .mt-#{$i} {
+    margin-top: -#{$i}px !important;
+  }
+  .mb#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+  .mb-#{$i} {
+    margin-bottom: -#{$i}px !important;
+  }
+  .ml#{$i} {
+    margin-left: #{$i}px !important;
+  }
+  .ml-#{$i} {
+    margin-left: -#{$i}px !important;
+  }
+  .mr#{$i} {
+    margin-right: #{$i}px !important;
+  }
+  .mr-#{$i} {
+    margin-right: -#{$i}px !important;
+  }
+  .p#{$i} {
+    padding: #{$i}px !important;
+  }
+  .px#{$i} {
+    padding-right: #{$i}px !important;
+    padding-left: #{$i}px !important;
+  }
+  .py#{$i} {
+    padding-top: #{$i}px !important;
+    padding-bottom: #{$i}px !important;
+  }
+  .pt#{$i} {
+    padding-top: #{$i}px !important;
+  }
+  .pb#{$i} {
+    padding-bottom: #{$i}px !important;
+  }
+  .pl#{$i} {
+    padding-left: #{$i}px !important;
+  }
+  .pr#{$i} {
+    padding-right: #{$i}px !important;
+  }
+}
+
+// flex
+.flex {
+  display: flex;
+}
+.flexReverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.flexColumnReverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.justifyStart {
+  display: flex;
+  justify-content: flex-start;
+}
+.justifyCenter {
+  display: flex;
+  justify-content: center;
+}
+.justifyEnd {
+  display: flex;
+  justify-content: flex-end;
+}
+.alignStart {
+  display: flex;
+  align-items: flex-start;
+}
+.alignCenter {
+  display: flex;
+  align-items: center;
+}
+.alignEnd {
+  display: flex;
+  align-items: flex-end;
+}
+.flexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.txtStart {
+  text-align: start;
+}
+.txtCenter {
+  text-align: center;
+}
+.txtEnd {
+  text-align: end;
+}
+.flexNone {
+  flex: none;
+}
+.flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+@for $i from 0 to 10 {
+  .flex#{$i} {
+    flex-grow: #{$i};
+  }
+}
+
+//radius
+.radius {
+  border-radius: var(--radius);
+}
+@for $i from 1 to 301 {
+  .r#{$i} {
+    border-radius: #{$i}px !important;
+  }
+}
+
+// gap
+@for $i from 1 to 101 {
+  .gap#{$i} {
+      gap: #{$i}px !important;
+  }
+}
+
+.gap-1 {
+  &>div:not(:first-child) {
+      margin-left: -1px;
+  }
+}
+
+// backdrop-filter
+@for $i from 1 to 101 {
+  .blur-back#{$i} {
+    backdrop-filter: blur(#{$i}px);
+  }
+  .blur#{$i} {
+    filter: blur(#{$i}px);
+  }
+}
+
+// overflow
+.scroll {
+  overflow: scroll;
+}
+.scrollY {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  &Auto {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+.overHidden {
+    overflow: hidden;
+}
+.wsPre {
+    white-space: pre;
+}
+
+// display / visibility
+.displayNone {display: none;}
+.hidden  {visibility: hidden; }
+.visible {visibility: visible;}
+
+// position
+.relative {position: relative;}
+.absolute {position: absolute;}
+.sticky {position: sticky;}
+.fixed    {position: fixed;}
+@for $i from 0 to 101 {
+  .at#{$i} {
+    top: #{$i}px;
+  }
+  .at-#{$i} {
+    top: -#{$i}px;
+  }
+  .al#{$i} {
+    left: #{$i}px;
+  }
+  .al-#{$i} {
+    left: -#{$i}px;
+  }
+  .ab#{$i} {
+    bottom: #{$i}px;
+  }
+  .ab-#{$i} {
+    bottom: -#{$i}px;
+  }
+  .ar#{$i} {
+    right: #{$i}px;
+  }
+  .ar-#{$i} {
+    right: -#{$i}px;
+  }
+}
+.at0 {top: 0;   }
+.ab0 {bottom: 0;}
+.al0 {left: 0;  }
+.ar0 {right: 0; }
+
+// cursor
+.cursor {
+  cursor: pointer;
+}
+
+//transition
+@for $i from 1 to 31 {
+  .transition#{$i} {
+    transition: calc(#{$i} * 0.1s);
+  }
+}
+
+// ellipsis
+.ellipsis1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+}
+
+@for $i from 2 to 11 {
+  .ellipsis#{$i} {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+      -webkit-line-clamp: #{$i};
+      -webkit-box-orient: vertical;
+  }
+}
+
+
+// required
+.required {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  &::after {
+      content: '*';
+      color: var(--required-color);
+  }
+}
+
+// z-index 
+.zi1 {
+  z-index: 1;
+}
+.zi9 {
+  z-index: 9;
+}
+.zi10 {
+  z-index: 10;
+}
+.zi99 {
+  z-index: 99;
+}
+.zi100 {
+  z-index: 100;
+}
+.zi999 {
+  z-index: 999;
+}
+.zi1000 {
+  z-index: 1000;
+}
