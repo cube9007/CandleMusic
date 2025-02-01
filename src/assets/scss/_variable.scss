@@ -3,13 +3,13 @@
   // color
   --set-black: 0, 0, 0;
   --set-white: 255, 255, 255;
-  --set-primary: 1, 160, 94;
+  --set-primary: 255, 52, 133;
 
   --black: rgb(var(--set-black));
   --white: rgb(var(--set-white));
   --primary: rgb(var(--set-primary));
-  --secondary: rgb(var(--set-secondary));
-  --tertiary: rgb(var(--set-tertiary));
+  // --secondary: rgb(var(--set-secondary));
+  // --tertiary: rgb(var(--set-tertiary));
 
   --notification: rgb(237, 46, 46);
   --success: rgb(14, 218, 108);
