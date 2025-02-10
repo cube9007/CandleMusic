@@ -34,7 +34,7 @@ const  Header = () => {
           <a href='#contact' >Contact</a>
         </div>
         <div className='right'>
-          <a href='' >Some</a>
+          <a href='' > Some</a>
           <a href='' >Youtube</a>
         </div>
       </div>
